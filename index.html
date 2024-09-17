@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="fixed-top" id="header">
+        <div class="container container-header text-center">
+            <div class="row justify-content-md-center">
+                <div class="col-auto">
+                    <a class="nav-menu__link" href="#">Robo.school</a>
+                </div>
+                <div class="col">
+                    <nav class="nav-menu">
+                        <ul class="nav-menu__list">
+                            <li class="nav-menu-item__about"><a href="#about">О школе</a></li>
+                            <li class="nav-menu-item__about"><a href="#link-2">Тренеры</a></li>
+                            <li class="nav-menu-item__about"><a href="#link-3">Стоимость</a></li>
+                        </ul> 
+                        
+                        <div class="media-menu">
+                            <div class="phone" onclick="callPhone('+7 800 000 11 22')">
+                                <img src="image/telephone.svg" alt="Phone">
+                            </div>
+
+                            <div class="burger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </div>
+                        
+                    </nav>
+                </div>
+              <div class="col-auto">
+                <a class="nav-menu__link telephone-link" href="#">+7 800 000 11 22</a>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section id="banner-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="banner-info">
+                            <h1 class="banner__title">Robo school</h1>
+                            <p class="banner__text">Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
+                            <a class="banner__btn-1 btn-primary" href="#link-4">Записаться на курс</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="girl"></div>
+                    </div>
+                    <a class="banner__btn-2 btn-primary" href="#link-4">Записаться на курс</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text">
+                            <p>
+                                <strong>Robo School</strong>
+                             - учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <p class="text-number">10</p>
+                        <p class="overall__about">УМК по различным направлениям по робототехнике</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <p class="text-number">20</p>
+                        <p class="overall__about">Школ, в которых запущена робототехника</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <p class="text-number">100</p>
+                        <p class="overall__about">Педагогов прошедших курсы повышения квалификации</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <p class="text-number">10 000</p>
+                        <p class="overall__about">Обученных детей на базе собственных центров</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="after-course">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Что вы получите после курса</h1>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <p class="overall__title">Удостоверение</p>
+                        <p class="overall__about">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <p class="overall__title">Знания</p>
+                        <p class="overall__about">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <p class="overall__title">Практику
+                            <button class="tooltip-btn" data-tooltip="При наличии свободных мест"><sup>i</sup></button>
+                        </p>
+
+                        <p class="overall__about">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trainers__prof" id="link-2">
+            <div class="container swiper">
+                <h1>Профессиональные тренеры</h1>
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper" id="tabs">
+                        <div class="card-item swiper-slide">
+                            <img src="image/unsplash_1.jpg" alt="Ирина Лайм">
+                            <p class="overall__title trainers__prof-title">Ирина Лайм</p>
+                            <p class="overall__about">преподаватель по робототехнике</p>
+                            <a href="#tabs-1" class="more__details overall__about">Подробнее</a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="image/unsplash_2.jpg" alt="Марина Орлова">
+                            <p class="overall__title trainers__prof-title">Марина Орлова</p>
+                            <p class="overall__about">преподаватель по робототехнике</p>
+                            <a href="#tabs-2" class="more__details overall__about" id="pop-up__open">Подробнее</a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="image/unsplash_3.jpg" alt="Максим Петров">
+                            <p class="overall__title trainers__prof-title">Максим Петров</p>
+                            <p class="overall__about">преподаватель по программированию</p>
+                            <a href="#tabs-3" class="more__details overall__about">Подробнее</a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="image/unsplash_3.jpg" alt="Максим Петров">
+                            <p class="overall__title trainers__prof-title">Максим Петров</p>
+                            <p class="overall__about">преподаватель по программированию</p>
+                            <a href="#tabs-3" class="more__details overall__about">Подробнее</a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="image/unsplash_2.jpg" alt="Марина Орлова">
+                            <p class="overall__title trainers__prof-title">Марина Орлова</p>
+                            <p class="overall__about">преподаватель по робототехнике</p>
+                            <a href="#tabs-2" class="more__details overall__about">Подробнее</a>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="image/unsplash_1.jpg" alt="Ирина Лайм">
+                            <p class="overall__title trainers__prof-title">Ирина Лайм</p>
+                            <p class="overall__about">преподаватель по робототехнике</p>
+                            <a href="#tabs-1" class="more__details overall__about">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="icon__arrows">
+                    <img src="image/Arrow - Left Circle.svg" alt="Влево" class="swiper-slide-button swiper-button-prev">
+                    <img src="image/Arrow - Right Circle.svg" alt="Вправо" class="swiper-slide-button swiper-button-next">
+                </div>
+            </div>
+
+            <div id="tabs-1">
+                <div class="pop-up">
+                    <div class="pop-up__container">
+                        <div class="pop-up__body">
+                            <div class="pop-up__user"> 
+                                <div class="name-title">
+                                    <img src="image/unsplash_1.jpg" alt="Ирина Лайм" width="160px" height="222px">
+                                    <div class="name-flex">
+                                        <p class="name overall__title">Ирина Лайм</p>
+                                        <p class="profession">преподаватель по робототехнике</p>
+                                        <div class="social-media">
+                                            <img src="image/Facebook.svg" alt="Facebook">
+                                            <img src="image/Instagram.svg" alt="Instagram">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-up__close">Закрыть</div>
+                            </div>
+                            <div id="pop-up__tabs">
+                                <ul class="container-tabs">
+                                  <li class="tab tab-active">Образование</li>
+                                  <li class="tab">Опыт работы</li>
+                                  <li class="tab">Награды</li>
+                                </ul>
+                                <div class="container-content">
+                                    <div class="content content-active">
+                                        <p> Сентябрь 1995 — Июнь 2000 <br>
+                                            Санкт-Петербургский политехнический университет Петра Великого <br>
+                                            Факультет: Компьютерных наук и технологий <br>
+                                            Специальность: Математика и компьютерные науки <br>
+                                            Форма обучения: Очная
+                                        </p>
+                                        <p class="overall__title">Курсы и тренинги</p>
+                                        <p>Ноябрь 2020 — Февраль 2021 <br>
+                                           Программа дополнительного образования «3D Моделирование» <br>
+                                           Место проведения: Институт дополнительного образования «Политех» <br>
+                                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque explicabo similique? Voluptates enim doloremque tempora cum voluptatem. Praesentium, possimus!
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corporis error et iste maiores corrupti consequuntur deserunt eaque cumque quis est perspiciatis reprehenderit ullam asperiores placeat recusandae magnam quaerat harum necessitatibus sunt quas nisi. Repellendus, cum qui dolore quae aspernatur ex eos facere ipsum vitae, illo, ducimus tempora modi similique nemo. Tempore ipsum saepe dignissimos id labore ab facilis explicabo laborum aliquid quaerat deserunt voluptates ad maiores voluptas veniam, quo blanditiis. Consequatur fugit ex praesentium tenetur voluptas, laboriosam inventore omnis? Facere eos tempora sequi, ipsum at deserunt architecto commodi modi, totam, est nesciunt! Deserunt nulla praesentium expedita sequi non asperiores ex suscipit. Ducimus nesciunt dolorum ut. Voluptate enim aliquam nobis ipsa, magni laborum inventore, itaque corrupti cum voluptatum rerum iure, accusantium minima dolores distinctio recusandae quod et quasi! Quam ipsum aspernatur odit at nisi sequi ad dignissimos libero aperiam ipsa, corrupti ullam architecto quae, provident incidunt illum minus molestiae velit quaerat dolor, voluptate cum! Nihil voluptas cum tempora molestiae eligendi? Adipisci dolores nesciunt mollitia deleniti aut facilis repellendus sequi laudantium non voluptas voluptatem quam, voluptate deserunt nisi. Ad eos dignissimos suscipit velit. Officiis quisquam maxime dolore explicabo iusto ad ipsum eos alias pariatur sapiente, porro impedit quaerat non repellendus quos a natus deserunt provident et illum dolorum! Explicabo quidem porro ab dolores enim magnam natus odio dolorum optio voluptate. Accusantium iste quos praesentium voluptates dignissimos odio deserunt repudiandae, nihil corrupti? Eaque quasi ullam veritatis nostrum impedit iste ut, iusto praesentium fuga vel ipsum voluptatem beatae? Nihil ex recusandae perspiciatis quod explicabo temporibus magni, facilis, et totam odit, ab sit laudantium voluptates ad inventore! Reprehenderit aut, perspiciatis ipsam laborum cumque atque voluptates id quos dolorem obcaecati facilis fugiat molestiae, ut, tenetur deserunt sed. Doloremque voluptas sed nostrum tempore similique! Repudiandae laboriosam vel molestias magnam quibusdam ipsa earum unde, neque voluptates ipsum, veritatis excepturi labore libero nam repellendus et odit culpa, accusantium quod reiciendis! Nihil consequuntur labore magnam repudiandae porro consectetur! Consequatur corrupti sit nihil. Reiciendis rerum iusto, atque totam debitis fugit ea ab excepturi quis alias ullam tempora officiis, quod asperiores maiores, aperiam corporis nam qui minus autem doloremque saepe nisi laboriosam quo. Dolor eligendi error cumque eum sint quod expedita ut ea rem vel iusto ullam ducimus alias modi et exercitationem, eos placeat aliquam vero asperiores. Repellat accusamus alias optio mollitia eveniet ut, adipisci molestias nam reprehenderit. Cupiditate id ratione quae esse expedita adipisci nam autem veniam saepe repellendus consequuntur illo ullam, cum totam earum asperiores quos voluptates delectus molestias laudantium accusantium voluptas reprehenderit! Enim sunt fugiat fugit atque sint, maxime dignissimos accusantium necessitatibus! Sunt perspiciatis, ipsum reiciendis eos, ratione a nihil est quam quaerat dolores maiores deserunt ullam cum dolorem! Inventore alias quae ullam ab debitis est dignissimos? Dolores, repellendus nam. Voluptatem eius error, cupiditate ratione natus voluptatum sunt aliquid iusto pariatur. Beatae minus adipisci qui nesciunt alias sit omnis repellat ipsa laboriosam officiis laborum itaque voluptates quod blanditiis quaerat commodi saepe quam, doloribus accusantium porro, dicta quibusdam. Voluptatibus quibusdam perspiciatis, molestiae ratione labore architecto pariatur vero voluptatum tempora.
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quo voluptatem numquam deserunt natus, officiis ut harum repellendus. Sequi atque porro minima ut, enim velit vel animi, maxime consectetur blanditiis placeat similique fugit eveniet exercitationem voluptatem alias. Adipisci similique facilis maxime sapiente commodi, quo explicabo? A unde rerum laudantium et quas aspernatur deleniti consequatur blanditiis autem minus iusto accusantium fuga odit in ducimus, accusamus ratione. Libero quos mollitia similique totam voluptatem excepturi incidunt dolore aliquid nobis voluptas. Delectus eaque tempore doloremque, non voluptate modi, unde sed quod inventore molestias reprehenderit qui, tempora esse. Maxime sequi debitis quibusdam nostrum deserunt odit.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi magni qui explicabo assumenda corrupti corporis alias eum recusandae culpa. Enim magni quibusdam consequuntur eveniet quod, similique quo provident excepturi doloribus ex minima soluta quia fugiat fugit quas inventore ipsa quasi voluptate quis saepe exercitationem. Aut necessitatibus temporibus illum delectus.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi nesciunt amet id dolorem deleniti sint fugiat ad, quos sapiente omnis dolore natus, quod in, impedit earum labore ducimus aperiam. Dolores doloribus illo magni. Minima quidem sit voluptatem vero consequuntur, dignissimos doloremque eveniet iusto qui voluptates culpa blanditiis necessitatibus maxime voluptas voluptatibus tempora fugiat esse modi est deserunt! Rerum, eius in magnam eligendi ut distinctio officiis voluptates a quod vitae incidunt deleniti ratione facere soluta delectus. Ut illum libero cupiditate in explicabo maxime, natus quod, maiores aperiam, sapiente vel quas dolores aspernatur doloremque commodi aut molestiae voluptas nam quia quos tempore! Facere totam error explicabo ea nam eius? Molestias excepturi aut mollitia nostrum alias labore non consectetur. Vero, consequatur rem totam excepturi doloremque ipsum molestiae facilis vitae cupiditate similique vel ad repellat, magni veritatis quis iusto! Non totam eaque unde aliquam quae vitae sit temporibus repellendus iure dignissimos dolore doloremque magni facere ab praesentium quibusdam, fugit illum minima optio eligendi provident. Laudantium, perferendis! Culpa totam tenetur, consequatur, eaque quia architecto voluptatibus velit vel quasi expedita a recusandae incidunt eum ipsum ea ipsam? Earum modi vitae ipsam maiores beatae voluptates vel enim adipisci? Voluptas, non. Adipisci corporis exercitationem ex a eos.
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquam eum voluptatum doloribus similique dolor magni exercitationem totam vero iusto possimus facilis ut sint! Magnam, quidem explicabo? Odio dolorum ea, quisquam dolore aliquid omnis quam repellat tempore nam magnam maiores fuga animi iusto blanditiis deleniti. In nostrum veritatis quibusdam ipsa reiciendis animi! Error, dolorum aspernatur aliquam distinctio nisi amet provident. Consequuntur, dolorum veniam obcaecati nulla, nihil aliquam fugiat ipsa quos vero modi quae repellat officiis. Excepturi id voluptatibus, saepe quos doloremque porro impedit ea modi, sequi ut minima maxime nesciunt tempore? Inventore porro possimus ipsam quis eos hic architecto nisi.
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem odio modi vero quis voluptatibus excepturi ab quidem incidunt nemo, assumenda fugiat repellendus tempore facere iste dolorum, quasi, est totam autem unde sapiente aliquam? Animi at excepturi sunt recusandae quibusdam. Minus laborum excepturi sunt dolorum aut placeat voluptate dignissimos labore eveniet amet ex voluptates officia modi repellendus sapiente harum magni omnis aspernatur pariatur eum sit, mollitia, quo possimus. Numquam aliquid inventore veniam, nihil molestias accusamus dolores iste atque corporis esse blanditiis nulla reiciendis. Incidunt hic ullam porro vero. Quisquam dignissimos itaque voluptate animi natus atque assumenda hic minus eius aliquam.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta hic delectus eos, doloribus ab assumenda culpa. Placeat excepturi quisquam molestias facere, qui voluptas eligendi culpa labore sed sequi sint totam, exercitationem iste itaque? Eum magni, iste sit in officia nesciunt atque est nulla suscipit possimus non dignissimos dolorum assumenda delectus distinctio facilis enim. Earum accusamus atque facilis, perferendis laboriosam iste dignissimos mollitia! Magni, doloremque! Ipsum, aperiam mollitia? Quo harum officiis magnam dignissimos consequatur velit voluptatum, laudantium excepturi doloremque id soluta quas facilis iusto repudiandae nulla cum? Quia saepe facilis iste laborum tempore fuga esse debitis repudiandae molestiae. Expedita ut sed incidunt nam totam debitis labore consequuntur, dolor officia maiores harum error ex, pariatur explicabo autem dolorem deleniti alias quo aperiam delectus architecto sequi possimus velit facilis? Ab molestiae labore, reprehenderit delectus sint expedita sequi cumque beatae omnis, doloribus dolore minima deleniti. Aliquid vitae impedit ratione soluta reprehenderit officiis explicabo ut, possimus vero, omnis excepturi eligendi minima quisquam doloremque exercitationem numquam dolores ea suscipit nihil voluptates iusto fugiat? Culpa omnis cum molestiae nemo voluptates odio magnam quos illo beatae sapiente, soluta voluptatibus quas. Iusto temporibus consectetur reprehenderit quisquam similique vitae quae, fuga velit! Ipsa pariatur neque, fugit iste rem consequatur id!
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="pop-up">
+                    <div class="pop-up__container">
+                            <div class="pop-up__body">
+                                <div class="pop-up__user"> 
+                                    <div class="name-title">
+                                        <img src="image/unsplash_2.jpg" alt="Марина Орлова" width="160px" height="222px">
+                                        <div class="name-flex">
+                                            <p class="name overall__title">Марина Орлова</p>
+                                            <p class="profession">преподаватель по робототехнике</p>
+                                            <div class="social-media">
+                                                <img src="image/Facebook.svg" alt="Facebook">
+                                                <img src="image/Instagram.svg" alt="Instagram">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pop-up__close">Закрыть</div>
+                                </div>
+                                <div id="pop-up__tabs">
+                                    <ul class="container-tabs">
+                                      <li class="tab tab-active" id="education">Образование</li>
+                                      <li class="tab" id="exsperience">Опыт работы</li>
+                                      <li class="tab" id="awards">Награды</li>
+                                    </ul>
+                                    <div class="container-content">
+                                        <div class="content content-active">
+                                            <p class="university"> Сентябрь 1995 — Июнь 2000 <br>
+                                                Санкт-Петербургский политехнический университет Петра Великого <br>
+                                                Факультет: Компьютерных наук и технологий <br>
+                                                Специальность: Математика и компьютерные науки <br>
+                                                Форма обучения: Очная
+                                            </p>
+                                            <p class="overall__title">Курсы и тренинги</p>
+                                            <p class="trainings">Ноябрь 2020 — Февраль 2021 <br>
+                                               Программа дополнительного образования «3D Моделирование» <br>
+                                               Место проведения: Институт дополнительного образования «Политех» <br>
+                                               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque explicabo similique? Voluptates enim doloremque tempora cum voluptatem. Praesentium, possimus!
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corporis error et iste maiores corrupti consequuntur deserunt eaque cumque quis est perspiciatis reprehenderit ullam asperiores placeat recusandae magnam quaerat harum necessitatibus sunt quas nisi. Repellendus, cum qui dolore quae aspernatur ex eos facere ipsum vitae, illo, ducimus tempora modi similique nemo. Tempore ipsum saepe dignissimos id labore ab facilis explicabo laborum aliquid quaerat deserunt voluptates ad maiores voluptas veniam, quo blanditiis. Consequatur fugit ex praesentium tenetur voluptas, laboriosam inventore omnis? Facere eos tempora sequi, ipsum at deserunt architecto commodi modi, totam, est nesciunt! Deserunt nulla praesentium expedita sequi non asperiores ex suscipit. Ducimus nesciunt dolorum ut. Voluptate enim aliquam nobis ipsa, magni laborum inventore, itaque corrupti cum voluptatum rerum iure, accusantium minima dolores distinctio recusandae quod et quasi! Quam ipsum aspernatur odit at nisi sequi ad dignissimos libero aperiam ipsa, corrupti ullam architecto quae, provident incidunt illum minus molestiae velit quaerat dolor, voluptate cum! Nihil voluptas cum tempora molestiae eligendi? Adipisci dolores nesciunt mollitia deleniti aut facilis repellendus sequi laudantium non voluptas voluptatem quam, voluptate deserunt nisi. Ad eos dignissimos suscipit velit. Officiis quisquam maxime dolore explicabo iusto ad ipsum eos alias pariatur sapiente, porro impedit quaerat non repellendus quos a natus deserunt provident et illum dolorum! Explicabo quidem porro ab dolores enim magnam natus odio dolorum optio voluptate. Accusantium iste quos praesentium voluptates dignissimos odio deserunt repudiandae, nihil corrupti? Eaque quasi ullam veritatis nostrum impedit iste ut, iusto praesentium fuga vel ipsum voluptatem beatae? Nihil ex recusandae perspiciatis quod explicabo temporibus magni, facilis, et totam odit, ab sit laudantium voluptates ad inventore! Reprehenderit aut, perspiciatis ipsam laborum cumque atque voluptates id quos dolorem obcaecati facilis fugiat molestiae, ut, tenetur deserunt sed. Doloremque voluptas sed nostrum tempore similique! Repudiandae laboriosam vel molestias magnam quibusdam ipsa earum unde, neque voluptates ipsum, veritatis excepturi labore libero nam repellendus et odit culpa, accusantium quod reiciendis! Nihil consequuntur labore magnam repudiandae porro consectetur! Consequatur corrupti sit nihil. Reiciendis rerum iusto, atque totam debitis fugit ea ab excepturi quis alias ullam tempora officiis, quod asperiores maiores, aperiam corporis nam qui minus autem doloremque saepe nisi laboriosam quo. Dolor eligendi error cumque eum sint quod expedita ut ea rem vel iusto ullam ducimus alias modi et exercitationem, eos placeat aliquam vero asperiores. Repellat accusamus alias optio mollitia eveniet ut, adipisci molestias nam reprehenderit. Cupiditate id ratione quae esse expedita adipisci nam autem veniam saepe repellendus consequuntur illo ullam, cum totam earum asperiores quos voluptates delectus molestias laudantium accusantium voluptas reprehenderit! Enim sunt fugiat fugit atque sint, maxime dignissimos accusantium necessitatibus! Sunt perspiciatis, ipsum reiciendis eos, ratione a nihil est quam quaerat dolores maiores deserunt ullam cum dolorem! Inventore alias quae ullam ab debitis est dignissimos? Dolores, repellendus nam. Voluptatem eius error, cupiditate ratione natus voluptatum sunt aliquid iusto pariatur. Beatae minus adipisci qui nesciunt alias sit omnis repellat ipsa laboriosam officiis laborum itaque voluptates quod blanditiis quaerat commodi saepe quam, doloribus accusantium porro, dicta quibusdam. Voluptatibus quibusdam perspiciatis, molestiae ratione labore architecto pariatur vero voluptatum tempora.
+                                            </p>
+                                        </div>
+                                        <div class="content exsperience">
+                                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quo voluptatem numquam deserunt natus, officiis ut harum repellendus. Sequi atque porro minima ut, enim velit vel animi, maxime consectetur blanditiis placeat similique fugit eveniet exercitationem voluptatem alias. Adipisci similique facilis maxime sapiente commodi, quo explicabo? A unde rerum laudantium et quas aspernatur deleniti consequatur blanditiis autem minus iusto accusantium fuga odit in ducimus, accusamus ratione. Libero quos mollitia similique totam voluptatem excepturi incidunt dolore aliquid nobis voluptas. Delectus eaque tempore doloremque, non voluptate modi, unde sed quod inventore molestias reprehenderit qui, tempora esse. Maxime sequi debitis quibusdam nostrum deserunt odit.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi magni qui explicabo assumenda corrupti corporis alias eum recusandae culpa. Enim magni quibusdam consequuntur eveniet quod, similique quo provident excepturi doloribus ex minima soluta quia fugiat fugit quas inventore ipsa quasi voluptate quis saepe exercitationem. Aut necessitatibus temporibus illum delectus.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi nesciunt amet id dolorem deleniti sint fugiat ad, quos sapiente omnis dolore natus, quod in, impedit earum labore ducimus aperiam. Dolores doloribus illo magni. Minima quidem sit voluptatem vero consequuntur, dignissimos doloremque eveniet iusto qui voluptates culpa blanditiis necessitatibus maxime voluptas voluptatibus tempora fugiat esse modi est deserunt! Rerum, eius in magnam eligendi ut distinctio officiis voluptates a quod vitae incidunt deleniti ratione facere soluta delectus. Ut illum libero cupiditate in explicabo maxime, natus quod, maiores aperiam, sapiente vel quas dolores aspernatur doloremque commodi aut molestiae voluptas nam quia quos tempore! Facere totam error explicabo ea nam eius? Molestias excepturi aut mollitia nostrum alias labore non consectetur. Vero, consequatur rem totam excepturi doloremque ipsum molestiae facilis vitae cupiditate similique vel ad repellat, magni veritatis quis iusto! Non totam eaque unde aliquam quae vitae sit temporibus repellendus iure dignissimos dolore doloremque magni facere ab praesentium quibusdam, fugit illum minima optio eligendi provident. Laudantium, perferendis! Culpa totam tenetur, consequatur, eaque quia architecto voluptatibus velit vel quasi expedita a recusandae incidunt eum ipsum ea ipsam? Earum modi vitae ipsam maiores beatae voluptates vel enim adipisci? Voluptas, non. Adipisci corporis exercitationem ex a eos.
+                                            </p>
+                                        </div>
+                                        <div class="content awards">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquam eum voluptatum doloribus similique dolor magni exercitationem totam vero iusto possimus facilis ut sint! Magnam, quidem explicabo? Odio dolorum ea, quisquam dolore aliquid omnis quam repellat tempore nam magnam maiores fuga animi iusto blanditiis deleniti. In nostrum veritatis quibusdam ipsa reiciendis animi! Error, dolorum aspernatur aliquam distinctio nisi amet provident. Consequuntur, dolorum veniam obcaecati nulla, nihil aliquam fugiat ipsa quos vero modi quae repellat officiis. Excepturi id voluptatibus, saepe quos doloremque porro impedit ea modi, sequi ut minima maxime nesciunt tempore? Inventore porro possimus ipsam quis eos hic architecto nisi.
+                                            </p>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem odio modi vero quis voluptatibus excepturi ab quidem incidunt nemo, assumenda fugiat repellendus tempore facere iste dolorum, quasi, est totam autem unde sapiente aliquam? Animi at excepturi sunt recusandae quibusdam. Minus laborum excepturi sunt dolorum aut placeat voluptate dignissimos labore eveniet amet ex voluptates officia modi repellendus sapiente harum magni omnis aspernatur pariatur eum sit, mollitia, quo possimus. Numquam aliquid inventore veniam, nihil molestias accusamus dolores iste atque corporis esse blanditiis nulla reiciendis. Incidunt hic ullam porro vero. Quisquam dignissimos itaque voluptate animi natus atque assumenda hic minus eius aliquam.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta hic delectus eos, doloribus ab assumenda culpa. Placeat excepturi quisquam molestias facere, qui voluptas eligendi culpa labore sed sequi sint totam, exercitationem iste itaque? Eum magni, iste sit in officia nesciunt atque est nulla suscipit possimus non dignissimos dolorum assumenda delectus distinctio facilis enim. Earum accusamus atque facilis, perferendis laboriosam iste dignissimos mollitia! Magni, doloremque! Ipsum, aperiam mollitia? Quo harum officiis magnam dignissimos consequatur velit voluptatum, laudantium excepturi doloremque id soluta quas facilis iusto repudiandae nulla cum? Quia saepe facilis iste laborum tempore fuga esse debitis repudiandae molestiae. Expedita ut sed incidunt nam totam debitis labore consequuntur, dolor officia maiores harum error ex, pariatur explicabo autem dolorem deleniti alias quo aperiam delectus architecto sequi possimus velit facilis? Ab molestiae labore, reprehenderit delectus sint expedita sequi cumque beatae omnis, doloribus dolore minima deleniti. Aliquid vitae impedit ratione soluta reprehenderit officiis explicabo ut, possimus vero, omnis excepturi eligendi minima quisquam doloremque exercitationem numquam dolores ea suscipit nihil voluptates iusto fugiat? Culpa omnis cum molestiae nemo voluptates odio magnam quos illo beatae sapiente, soluta voluptatibus quas. Iusto temporibus consectetur reprehenderit quisquam similique vitae quae, fuga velit! Ipsa pariatur neque, fugit iste rem consequatur id!
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div class="pop-up">
+                    <div class="pop-up__container">
+                        <div class="pop-up__body">
+                            <div class="pop-up__user"> 
+                                <div class="name-title">
+                                    <img src="image/unsplash_3.jpg" alt="Максим Петров" width="160px" height="222px">
+                                    <div class="name-flex">
+                                        <p class="name overall__title">Максим Петров</p>
+                                        <p class="profession">преподаватель по программированию</p>
+                                        <div class="social-media">
+                                            <img src="image/Facebook.svg" alt="Facebook">
+                                            <img src="image/Instagram.svg" alt="Instagram">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-up__close">Закрыть</div>
+                            </div>
+                            <div id="pop-up__tabs">
+                                <ul class="container-tabs">
+                                  <li class="tab tab-active">Образование</li>
+                                  <li class="tab">Опыт работы</li>
+                                  <li class="tab">Награды</li>
+                                </ul>
+                                <div class="container-content">
+                                    <div class="content content-active">
+                                        <p> Сентябрь 1995 — Июнь 2000 <br>
+                                            Санкт-Петербургский политехнический университет Петра Великого <br>
+                                            Факультет: Компьютерных наук и технологий <br>
+                                            Специальность: Математика и компьютерные науки <br>
+                                            Форма обучения: Очная
+                                        </p>
+                                        <p class="overall__title">Курсы и тренинги</p>
+                                        <p>Ноябрь 2020 — Февраль 2021 <br>
+                                           Программа дополнительного образования «3D Моделирование» <br>
+                                           Место проведения: Институт дополнительного образования «Политех» <br>
+                                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque explicabo similique? Voluptates enim doloremque tempora cum voluptatem. Praesentium, possimus!
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corporis error et iste maiores corrupti consequuntur deserunt eaque cumque quis est perspiciatis reprehenderit ullam asperiores placeat recusandae magnam quaerat harum necessitatibus sunt quas nisi. Repellendus, cum qui dolore quae aspernatur ex eos facere ipsum vitae, illo, ducimus tempora modi similique nemo. Tempore ipsum saepe dignissimos id labore ab facilis explicabo laborum aliquid quaerat deserunt voluptates ad maiores voluptas veniam, quo blanditiis. Consequatur fugit ex praesentium tenetur voluptas, laboriosam inventore omnis? Facere eos tempora sequi, ipsum at deserunt architecto commodi modi, totam, est nesciunt! Deserunt nulla praesentium expedita sequi non asperiores ex suscipit. Ducimus nesciunt dolorum ut. Voluptate enim aliquam nobis ipsa, magni laborum inventore, itaque corrupti cum voluptatum rerum iure, accusantium minima dolores distinctio recusandae quod et quasi! Quam ipsum aspernatur odit at nisi sequi ad dignissimos libero aperiam ipsa, corrupti ullam architecto quae, provident incidunt illum minus molestiae velit quaerat dolor, voluptate cum! Nihil voluptas cum tempora molestiae eligendi? Adipisci dolores nesciunt mollitia deleniti aut facilis repellendus sequi laudantium non voluptas voluptatem quam, voluptate deserunt nisi. Ad eos dignissimos suscipit velit. Officiis quisquam maxime dolore explicabo iusto ad ipsum eos alias pariatur sapiente, porro impedit quaerat non repellendus quos a natus deserunt provident et illum dolorum! Explicabo quidem porro ab dolores enim magnam natus odio dolorum optio voluptate. Accusantium iste quos praesentium voluptates dignissimos odio deserunt repudiandae, nihil corrupti? Eaque quasi ullam veritatis nostrum impedit iste ut, iusto praesentium fuga vel ipsum voluptatem beatae? Nihil ex recusandae perspiciatis quod explicabo temporibus magni, facilis, et totam odit, ab sit laudantium voluptates ad inventore! Reprehenderit aut, perspiciatis ipsam laborum cumque atque voluptates id quos dolorem obcaecati facilis fugiat molestiae, ut, tenetur deserunt sed. Doloremque voluptas sed nostrum tempore similique! Repudiandae laboriosam vel molestias magnam quibusdam ipsa earum unde, neque voluptates ipsum, veritatis excepturi labore libero nam repellendus et odit culpa, accusantium quod reiciendis! Nihil consequuntur labore magnam repudiandae porro consectetur! Consequatur corrupti sit nihil. Reiciendis rerum iusto, atque totam debitis fugit ea ab excepturi quis alias ullam tempora officiis, quod asperiores maiores, aperiam corporis nam qui minus autem doloremque saepe nisi laboriosam quo. Dolor eligendi error cumque eum sint quod expedita ut ea rem vel iusto ullam ducimus alias modi et exercitationem, eos placeat aliquam vero asperiores. Repellat accusamus alias optio mollitia eveniet ut, adipisci molestias nam reprehenderit. Cupiditate id ratione quae esse expedita adipisci nam autem veniam saepe repellendus consequuntur illo ullam, cum totam earum asperiores quos voluptates delectus molestias laudantium accusantium voluptas reprehenderit! Enim sunt fugiat fugit atque sint, maxime dignissimos accusantium necessitatibus! Sunt perspiciatis, ipsum reiciendis eos, ratione a nihil est quam quaerat dolores maiores deserunt ullam cum dolorem! Inventore alias quae ullam ab debitis est dignissimos? Dolores, repellendus nam. Voluptatem eius error, cupiditate ratione natus voluptatum sunt aliquid iusto pariatur. Beatae minus adipisci qui nesciunt alias sit omnis repellat ipsa laboriosam officiis laborum itaque voluptates quod blanditiis quaerat commodi saepe quam, doloribus accusantium porro, dicta quibusdam. Voluptatibus quibusdam perspiciatis, molestiae ratione labore architecto pariatur vero voluptatum tempora.
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quo voluptatem numquam deserunt natus, officiis ut harum repellendus. Sequi atque porro minima ut, enim velit vel animi, maxime consectetur blanditiis placeat similique fugit eveniet exercitationem voluptatem alias. Adipisci similique facilis maxime sapiente commodi, quo explicabo? A unde rerum laudantium et quas aspernatur deleniti consequatur blanditiis autem minus iusto accusantium fuga odit in ducimus, accusamus ratione. Libero quos mollitia similique totam voluptatem excepturi incidunt dolore aliquid nobis voluptas. Delectus eaque tempore doloremque, non voluptate modi, unde sed quod inventore molestias reprehenderit qui, tempora esse. Maxime sequi debitis quibusdam nostrum deserunt odit.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi magni qui explicabo assumenda corrupti corporis alias eum recusandae culpa. Enim magni quibusdam consequuntur eveniet quod, similique quo provident excepturi doloribus ex minima soluta quia fugiat fugit quas inventore ipsa quasi voluptate quis saepe exercitationem. Aut necessitatibus temporibus illum delectus.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi nesciunt amet id dolorem deleniti sint fugiat ad, quos sapiente omnis dolore natus, quod in, impedit earum labore ducimus aperiam. 
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-4">
+                <div class="pop-up">
+                    <div class="pop-up__container">
+                        <div class="pop-up__body">
+                            <div class="pop-up__user"> 
+                                <div class="name-title">
+                                    <img src="image/unsplash_3.jpg" alt="Максим Петров" width="160px" height="222px">
+                                    <div class="name-flex">
+                                        <p class="name overall__title">Максим Петров</p>
+                                        <p class="profession">преподаватель по программированию</p>
+                                        <div class="social-media">
+                                            <img src="image/Facebook.svg" alt="Facebook">
+                                            <img src="image/Instagram.svg" alt="Instagram">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-up__close">Закрыть</div>
+                            </div>
+                            <div id="pop-up__tabs">
+                                <ul class="container-tabs">
+                                  <li class="tab tab-active">Образование</li>
+                                  <li class="tab">Опыт работы</li>
+                                  <li class="tab">Награды</li>
+                                </ul>
+                                <div class="container-content">
+                                    <div class="content content-active">
+                                        <p> Сентябрь 1995 — Июнь 2000 <br>
+                                            Санкт-Петербургский политехнический университет Петра Великого <br>
+                                            Факультет: Компьютерных наук и технологий <br>
+                                            Специальность: Математика и компьютерные науки <br>
+                                            Форма обучения: Очная
+                                        </p>
+                                        <p class="overall__title">Курсы и тренинги</p>
+                                        <p>Ноябрь 2020 — Февраль 2021 <br>
+                                           Программа дополнительного образования «3D Моделирование» <br>
+                                           Место проведения: Институт дополнительного образования «Политех» <br>
+                                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque explicabo similique? Voluptates enim doloremque tempora cum voluptatem. Praesentium, possimus!
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corporis error et iste maiores corrupti consequuntur deserunt eaque cumque quis est perspiciatis reprehenderit ullam asperiores placeat recusandae magnam quaerat harum necessitatibus sunt quas nisi. Repellendus, cum qui dolore quae aspernatur ex eos facere ipsum vitae, illo, ducimus tempora modi similique nemo. Tempore ipsum saepe dignissimos id labore ab facilis explicabo laborum aliquid quaerat deserunt voluptates ad maiores voluptas veniam, quo blanditiis. Consequatur fugit ex praesentium tenetur voluptas, laboriosam inventore omnis? Facere eos tempora sequi, ipsum at deserunt architecto commodi modi, totam, est nesciunt! Deserunt nulla praesentium expedita sequi non asperiores ex suscipit. Ducimus nesciunt dolorum ut. Voluptate enim aliquam nobis ipsa, magni laborum inventore, itaque corrupti cum voluptatum rerum iure, accusantium minima dolores distinctio recusandae quod et quasi! Quam ipsum aspernatur odit at nisi sequi ad dignissimos libero aperiam ipsa, corrupti ullam architecto quae, provident incidunt illum minus molestiae velit quaerat dolor, voluptate cum! Nihil voluptas cum tempora molestiae eligendi? Adipisci dolores nesciunt mollitia deleniti aut facilis repellendus sequi laudantium non voluptas voluptatem quam, voluptate deserunt nisi. Ad eos dignissimos suscipit velit. Officiis quisquam maxime dolore explicabo iusto ad ipsum eos alias pariatur sapiente, porro impedit quaerat non repellendus quos a natus deserunt provident et illum dolorum! Explicabo quidem porro ab dolores enim magnam natus odio dolorum optio voluptate. Accusantium iste quos praesentium voluptates dignissimos odio deserunt repudiandae, nihil corrupti? Eaque quasi ullam veritatis nostrum impedit iste ut, iusto praesentium fuga vel ipsum voluptatem beatae? Nihil ex recusandae perspiciatis quod explicabo temporibus magni, facilis, et totam odit, ab sit laudantium voluptates ad inventore! Reprehenderit aut, perspiciatis ipsam laborum cumque atque voluptates id quos dolorem obcaecati facilis fugiat molestiae, ut, tenetur deserunt sed. Doloremque voluptas sed nostrum tempore similique! Repudiandae laboriosam vel molestias magnam quibusdam ipsa earum unde, neque voluptates ipsum, veritatis excepturi labore libero nam repellendus et odit culpa, accusantium quod reiciendis! Nihil consequuntur labore magnam repudiandae porro consectetur! Consequatur corrupti sit nihil. Reiciendis rerum iusto, atque totam debitis fugit ea ab excepturi quis alias ullam tempora officiis, quod asperiores maiores, aperiam corporis nam qui minus autem doloremque saepe nisi laboriosam quo. Dolor eligendi error cumque eum sint quod expedita ut ea rem vel iusto ullam ducimus alias modi et exercitationem, eos placeat aliquam vero asperiores. Repellat accusamus alias optio mollitia eveniet ut, adipisci molestias nam reprehenderit. Cupiditate id ratione quae esse expedita adipisci nam autem veniam saepe repellendus consequuntur illo ullam, cum totam earum asperiores quos voluptates delectus molestias laudantium accusantium voluptas reprehenderit! Enim sunt fugiat fugit atque sint, maxime dignissimos accusantium necessitatibus! Sunt perspiciatis, ipsum reiciendis eos, ratione a nihil est quam quaerat dolores maiores deserunt ullam cum dolorem! Inventore alias quae ullam ab debitis est dignissimos? Dolores, repellendus nam. Voluptatem eius error, cupiditate ratione natus voluptatum sunt aliquid iusto pariatur. Beatae minus adipisci qui nesciunt alias sit omnis repellat ipsa laboriosam officiis laborum itaque voluptates quod blanditiis quaerat commodi saepe quam, doloribus accusantium porro, dicta quibusdam. Voluptatibus quibusdam perspiciatis, molestiae ratione labore architecto pariatur vero voluptatum tempora.
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quo voluptatem numquam deserunt natus, officiis ut harum repellendus. Sequi atque porro minima ut, enim velit vel animi, maxime consectetur blanditiis placeat similique fugit eveniet exercitationem voluptatem alias. Adipisci similique facilis maxime sapiente commodi, quo explicabo? A unde rerum laudantium et quas aspernatur deleniti consequatur blanditiis autem minus iusto accusantium fuga odit in ducimus, accusamus ratione. Libero quos mollitia similique totam voluptatem excepturi incidunt dolore aliquid nobis voluptas. Delectus eaque tempore doloremque, non voluptate modi, unde sed quod inventore molestias reprehenderit qui, tempora esse. Maxime sequi debitis quibusdam nostrum deserunt odit.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi magni qui explicabo assumenda corrupti corporis alias eum recusandae culpa. Enim magni quibusdam consequuntur eveniet quod, similique quo provident excepturi doloribus ex minima soluta quia fugiat fugit quas inventore ipsa quasi voluptate quis saepe exercitationem. Aut necessitatibus temporibus illum delectus.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi nesciunt amet id dolorem deleniti sint fugiat ad, quos sapiente omnis dolore natus, quod in, impedit earum labore ducimus aperiam. 
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-5">
+                <div class="pop-up">
+                    <div class="pop-up__container">
+                            <div class="pop-up__body">
+                                <div class="pop-up__user"> 
+                                    <div class="name-title">
+                                        <img src="image/unsplash_2.jpg" alt="Марина Орлова" width="160px" height="222px">
+                                        <div class="name-flex">
+                                            <p class="name overall__title">Марина Орлова</p>
+                                            <p class="profession">преподаватель по робототехнике</p>
+                                            <div class="social-media">
+                                                <img src="image/Facebook.svg" alt="Facebook">
+                                                <img src="image/Instagram.svg" alt="Instagram">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pop-up__close">Закрыть</div>
+                                </div>
+                                <div id="pop-up__tabs">
+                                    <ul class="container-tabs">
+                                      <li class="tab tab-active" id="education">Образование</li>
+                                      <li class="tab" id="exsperience">Опыт работы</li>
+                                      <li class="tab" id="awards">Награды</li>
+                                    </ul>
+                                    <div class="container-content">
+                                        <div class="content content-active">
+                                            <p class="university"> Сентябрь 1995 — Июнь 2000 <br>
+                                                Санкт-Петербургский политехнический университет Петра Великого <br>
+                                                Факультет: Компьютерных наук и технологий <br>
+                                                Специальность: Математика и компьютерные науки <br>
+                                                Форма обучения: Очная
+                                            </p>
+                                            <p class="overall__title">Курсы и тренинги</p>
+                                            <p class="trainings">Ноябрь 2020 — Февраль 2021 <br>
+                                               Программа дополнительного образования «3D Моделирование» <br>
+                                               Место проведения: Институт дополнительного образования «Политех» <br>
+                                               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque explicabo similique? Voluptates enim doloremque tempora cum voluptatem. Praesentium, possimus!
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corporis error et iste maiores corrupti consequuntur deserunt eaque cumque quis est perspiciatis reprehenderit ullam asperiores placeat recusandae magnam quaerat harum necessitatibus sunt quas nisi. Repellendus, cum qui dolore quae aspernatur ex eos facere ipsum vitae, illo, ducimus tempora modi similique nemo. Tempore ipsum saepe dignissimos id labore ab facilis explicabo laborum aliquid quaerat deserunt voluptates ad maiores voluptas veniam, quo blanditiis. Consequatur fugit ex praesentium tenetur voluptas, laboriosam inventore omnis? Facere eos tempora sequi, ipsum at deserunt architecto commodi modi, totam, est nesciunt! Deserunt nulla praesentium expedita sequi non asperiores ex suscipit. Ducimus nesciunt dolorum ut. Voluptate enim aliquam nobis ipsa, magni laborum inventore, itaque corrupti cum voluptatum rerum iure, accusantium minima dolores distinctio recusandae quod et quasi! Quam ipsum aspernatur odit at nisi sequi ad dignissimos libero aperiam ipsa, corrupti ullam architecto quae, provident incidunt illum minus molestiae velit quaerat dolor, voluptate cum! Nihil voluptas cum tempora molestiae eligendi? Adipisci dolores nesciunt mollitia deleniti aut facilis repellendus sequi laudantium non voluptas voluptatem quam, voluptate deserunt nisi. Ad eos dignissimos suscipit velit. Officiis quisquam maxime dolore explicabo iusto ad ipsum eos alias pariatur sapiente, porro impedit quaerat non repellendus quos a natus deserunt provident et illum dolorum! Explicabo quidem porro ab dolores enim magnam natus odio dolorum optio voluptate. Accusantium iste quos praesentium voluptates dignissimos odio deserunt repudiandae, nihil corrupti? Eaque quasi ullam veritatis nostrum impedit iste ut, iusto praesentium fuga vel ipsum voluptatem beatae? Nihil ex recusandae perspiciatis quod explicabo temporibus magni, facilis, et totam odit, ab sit laudantium voluptates ad inventore! Reprehenderit aut, perspiciatis ipsam laborum cumque atque voluptates id quos dolorem obcaecati facilis fugiat molestiae, ut, tenetur deserunt sed. Doloremque voluptas sed nostrum tempore similique! Repudiandae laboriosam vel molestias magnam quibusdam ipsa earum unde, neque voluptates ipsum, veritatis excepturi labore libero nam repellendus et odit culpa, accusantium quod reiciendis! Nihil consequuntur labore magnam repudiandae porro consectetur! Consequatur corrupti sit nihil. Reiciendis rerum iusto, atque totam debitis fugit ea ab excepturi quis alias ullam tempora officiis, quod asperiores maiores, aperiam corporis nam qui minus autem doloremque saepe nisi laboriosam quo. Dolor eligendi error cumque eum sint quod expedita ut ea rem vel iusto ullam ducimus alias modi et exercitationem, eos placeat aliquam vero asperiores. Repellat accusamus alias optio mollitia eveniet ut, adipisci molestias nam reprehenderit. Cupiditate id ratione quae esse expedita adipisci nam autem veniam saepe repellendus consequuntur illo ullam, cum totam earum asperiores quos voluptates delectus molestias laudantium accusantium voluptas reprehenderit! Enim sunt fugiat fugit atque sint, maxime dignissimos accusantium necessitatibus! Sunt perspiciatis, ipsum reiciendis eos, ratione a nihil est quam quaerat dolores maiores deserunt ullam cum dolorem! Inventore alias quae ullam ab debitis est dignissimos? Dolores, repellendus nam. Voluptatem eius error, cupiditate ratione natus voluptatum sunt aliquid iusto pariatur. Beatae minus adipisci qui nesciunt alias sit omnis repellat ipsa laboriosam officiis laborum itaque voluptates quod blanditiis quaerat commodi saepe quam, doloribus accusantium porro, dicta quibusdam. Voluptatibus quibusdam perspiciatis, molestiae ratione labore architecto pariatur vero voluptatum tempora.
+                                            </p>
+                                        </div>
+                                        <div class="content exsperience">
+                                            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quo voluptatem numquam deserunt natus, officiis ut harum repellendus. Sequi atque porro minima ut, enim velit vel animi, maxime consectetur blanditiis placeat similique fugit eveniet exercitationem voluptatem alias. Adipisci similique facilis maxime sapiente commodi, quo explicabo? A unde rerum laudantium et quas aspernatur deleniti consequatur blanditiis autem minus iusto accusantium fuga odit in ducimus, accusamus ratione. Libero quos mollitia similique totam voluptatem excepturi incidunt dolore aliquid nobis voluptas. Delectus eaque tempore doloremque, non voluptate modi, unde sed quod inventore molestias reprehenderit qui, tempora esse. Maxime sequi debitis quibusdam nostrum deserunt odit.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi magni qui explicabo assumenda corrupti corporis alias eum recusandae culpa. Enim magni quibusdam consequuntur eveniet quod, similique quo provident excepturi doloribus ex minima soluta quia fugiat fugit quas inventore ipsa quasi voluptate quis saepe exercitationem. Aut necessitatibus temporibus illum delectus.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi nesciunt amet id dolorem deleniti sint fugiat ad, quos sapiente omnis dolore natus, quod in, impedit earum labore ducimus aperiam. Dolores doloribus illo magni. Minima quidem sit voluptatem vero consequuntur, dignissimos doloremque eveniet iusto qui voluptates culpa blanditiis necessitatibus maxime voluptas voluptatibus tempora fugiat esse modi est deserunt! Rerum, eius in magnam eligendi ut distinctio officiis voluptates a quod vitae incidunt deleniti ratione facere soluta delectus. Ut illum libero cupiditate in explicabo maxime, natus quod, maiores aperiam, sapiente vel quas dolores aspernatur doloremque commodi aut molestiae voluptas nam quia quos tempore! Facere totam error explicabo ea nam eius? Molestias excepturi aut mollitia nostrum alias labore non consectetur. Vero, consequatur rem totam excepturi doloremque ipsum molestiae facilis vitae cupiditate similique vel ad repellat, magni veritatis quis iusto! Non totam eaque unde aliquam quae vitae sit temporibus repellendus iure dignissimos dolore doloremque magni facere ab praesentium quibusdam, fugit illum minima optio eligendi provident. Laudantium, perferendis! Culpa totam tenetur, consequatur, eaque quia architecto voluptatibus velit vel quasi expedita a recusandae incidunt eum ipsum ea ipsam? Earum modi vitae ipsam maiores beatae voluptates vel enim adipisci? Voluptas, non. Adipisci corporis exercitationem ex a eos.
+                                            </p>
+                                        </div>
+                                        <div class="content awards">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquam eum voluptatum doloribus similique dolor magni exercitationem totam vero iusto possimus facilis ut sint! Magnam, quidem explicabo? Odio dolorum ea, quisquam dolore aliquid omnis quam repellat tempore nam magnam maiores fuga animi iusto blanditiis deleniti. In nostrum veritatis quibusdam ipsa reiciendis animi! Error, dolorum aspernatur aliquam distinctio nisi amet provident. Consequuntur, dolorum veniam obcaecati nulla, nihil aliquam fugiat ipsa quos vero modi quae repellat officiis. Excepturi id voluptatibus, saepe quos doloremque porro impedit ea modi, sequi ut minima maxime nesciunt tempore? Inventore porro possimus ipsam quis eos hic architecto nisi.
+                                            </p>
+                                            <p>
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem odio modi vero quis voluptatibus excepturi ab quidem incidunt nemo, assumenda fugiat repellendus tempore facere iste dolorum, quasi, est totam autem unde sapiente aliquam? Animi at excepturi sunt recusandae quibusdam. Minus laborum excepturi sunt dolorum aut placeat voluptate dignissimos labore eveniet amet ex voluptates officia modi repellendus sapiente harum magni omnis aspernatur pariatur eum sit, mollitia, quo possimus. Numquam aliquid inventore veniam, nihil molestias accusamus dolores iste atque corporis esse blanditiis nulla reiciendis. Incidunt hic ullam porro vero. Quisquam dignissimos itaque voluptate animi natus atque assumenda hic minus eius aliquam.
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta hic delectus eos, doloribus ab assumenda culpa. Placeat excepturi quisquam molestias facere, qui voluptas eligendi culpa labore sed sequi sint totam, exercitationem iste itaque? Eum magni, iste sit in officia nesciunt atque est nulla suscipit possimus non dignissimos dolorum assumenda delectus distinctio facilis enim. Earum accusamus atque facilis, perferendis laboriosam iste dignissimos mollitia! Magni, doloremque! Ipsum, aperiam mollitia? Quo harum officiis magnam dignissimos consequatur velit voluptatum, laudantium excepturi doloremque id soluta quas facilis iusto repudiandae nulla cum? Quia saepe facilis iste laborum tempore fuga esse debitis repudiandae molestiae. Expedita ut sed incidunt nam totam debitis labore consequuntur, dolor officia maiores harum error ex, pariatur explicabo autem dolorem deleniti alias quo aperiam delectus architecto sequi possimus velit facilis? Ab molestiae labore, reprehenderit delectus sint expedita sequi cumque beatae omnis, doloribus dolore minima deleniti. Aliquid vitae impedit ratione soluta reprehenderit officiis explicabo ut, possimus vero, omnis excepturi eligendi minima quisquam doloremque exercitationem numquam dolores ea suscipit nihil voluptates iusto fugiat? Culpa omnis cum molestiae nemo voluptates odio magnam quos illo beatae sapiente, soluta voluptatibus quas. Iusto temporibus consectetur reprehenderit quisquam similique vitae quae, fuga velit! Ipsa pariatur neque, fugit iste rem consequatur id!
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tabs-6">
+                <div class="pop-up">
+                    <div class="pop-up__container">
+                        <div class="pop-up__body">
+                            <div class="pop-up__user"> 
+                                <div class="name-title">
+                                    <img src="image/unsplash_1.jpg" alt="Ирина Лайм" width="160px" height="222px">
+                                    <div class="name-flex">
+                                        <p class="name overall__title">Ирина Лайм</p>
+                                        <p class="profession">преподаватель по робототехнике</p>
+                                        <div class="social-media">
+                                            <img src="image/Facebook.svg" alt="Facebook">
+                                            <img src="image/Instagram.svg" alt="Instagram">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-up__close">Закрыть</div>
+                            </div>
+                            <div id="pop-up__tabs">
+                                <ul class="container-tabs">
+                                  <li class="tab tab-active">Образование</li>
+                                  <li class="tab">Опыт работы</li>
+                                  <li class="tab">Награды</li>
+                                </ul>
+                                <div class="container-content">
+                                    <div class="content content-active">
+                                        <p> Сентябрь 1995 — Июнь 2000 <br>
+                                            Санкт-Петербургский политехнический университет Петра Великого <br>
+                                            Факультет: Компьютерных наук и технологий <br>
+                                            Специальность: Математика и компьютерные науки <br>
+                                            Форма обучения: Очная
+                                        </p>
+                                        <p class="overall__title">Курсы и тренинги</p>
+                                        <p>Ноябрь 2020 — Февраль 2021 <br>
+                                           Программа дополнительного образования «3D Моделирование» <br>
+                                           Место проведения: Институт дополнительного образования «Политех» <br>
+                                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque explicabo similique? Voluptates enim doloremque tempora cum voluptatem. Praesentium, possimus!
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, corporis error et iste maiores corrupti consequuntur deserunt eaque cumque quis est perspiciatis reprehenderit ullam asperiores placeat recusandae magnam quaerat harum necessitatibus sunt quas nisi. Repellendus, cum qui dolore quae aspernatur ex eos facere ipsum vitae, illo, ducimus tempora modi similique nemo. Tempore ipsum saepe dignissimos id labore ab facilis explicabo laborum aliquid quaerat deserunt voluptates ad maiores voluptas veniam, quo blanditiis. Consequatur fugit ex praesentium tenetur voluptas, laboriosam inventore omnis? Facere eos tempora sequi, ipsum at deserunt architecto commodi modi, totam, est nesciunt! Deserunt nulla praesentium expedita sequi non asperiores ex suscipit. Ducimus nesciunt dolorum ut. Voluptate enim aliquam nobis ipsa, magni laborum inventore, itaque corrupti cum voluptatum rerum iure, accusantium minima dolores distinctio recusandae quod et quasi! Quam ipsum aspernatur odit at nisi sequi ad dignissimos libero aperiam ipsa, corrupti ullam architecto quae, provident incidunt illum minus molestiae velit quaerat dolor, voluptate cum! Nihil voluptas cum tempora molestiae eligendi? Adipisci dolores nesciunt mollitia deleniti aut facilis repellendus sequi laudantium non voluptas voluptatem quam, voluptate deserunt nisi. Ad eos dignissimos suscipit velit. Officiis quisquam maxime dolore explicabo iusto ad ipsum eos alias pariatur sapiente, porro impedit quaerat non repellendus quos a natus deserunt provident et illum dolorum! Explicabo quidem porro ab dolores enim magnam natus odio dolorum optio voluptate. Accusantium iste quos praesentium voluptates dignissimos odio deserunt repudiandae, nihil corrupti? Eaque quasi ullam veritatis nostrum impedit iste ut, iusto praesentium fuga vel ipsum voluptatem beatae? Nihil ex recusandae perspiciatis quod explicabo temporibus magni, facilis, et totam odit, ab sit laudantium voluptates ad inventore! Reprehenderit aut, perspiciatis ipsam laborum cumque atque voluptates id quos dolorem obcaecati facilis fugiat molestiae, ut, tenetur deserunt sed. Doloremque voluptas sed nostrum tempore similique! Repudiandae laboriosam vel molestias magnam quibusdam ipsa earum unde, neque voluptates ipsum, veritatis excepturi labore libero nam repellendus et odit culpa, accusantium quod reiciendis! Nihil consequuntur labore magnam repudiandae porro consectetur! Consequatur corrupti sit nihil. Reiciendis rerum iusto, atque totam debitis fugit ea ab excepturi quis alias ullam tempora officiis, quod asperiores maiores, aperiam corporis nam qui minus autem doloremque saepe nisi laboriosam quo. Dolor eligendi error cumque eum sint quod expedita ut ea rem vel iusto ullam ducimus alias modi et exercitationem, eos placeat aliquam vero asperiores. Repellat accusamus alias optio mollitia eveniet ut, adipisci molestias nam reprehenderit. Cupiditate id ratione quae esse expedita adipisci nam autem veniam saepe repellendus consequuntur illo ullam, cum totam earum asperiores quos voluptates delectus molestias laudantium accusantium voluptas reprehenderit! Enim sunt fugiat fugit atque sint, maxime dignissimos accusantium necessitatibus! Sunt perspiciatis, ipsum reiciendis eos, ratione a nihil est quam quaerat dolores maiores deserunt ullam cum dolorem! Inventore alias quae ullam ab debitis est dignissimos? Dolores, repellendus nam. Voluptatem eius error, cupiditate ratione natus voluptatum sunt aliquid iusto pariatur. Beatae minus adipisci qui nesciunt alias sit omnis repellat ipsa laboriosam officiis laborum itaque voluptates quod blanditiis quaerat commodi saepe quam, doloribus accusantium porro, dicta quibusdam. Voluptatibus quibusdam perspiciatis, molestiae ratione labore architecto pariatur vero voluptatum tempora.
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quo voluptatem numquam deserunt natus, officiis ut harum repellendus. Sequi atque porro minima ut, enim velit vel animi, maxime consectetur blanditiis placeat similique fugit eveniet exercitationem voluptatem alias. Adipisci similique facilis maxime sapiente commodi, quo explicabo? A unde rerum laudantium et quas aspernatur deleniti consequatur blanditiis autem minus iusto accusantium fuga odit in ducimus, accusamus ratione. Libero quos mollitia similique totam voluptatem excepturi incidunt dolore aliquid nobis voluptas. Delectus eaque tempore doloremque, non voluptate modi, unde sed quod inventore molestias reprehenderit qui, tempora esse. Maxime sequi debitis quibusdam nostrum deserunt odit.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quasi magni qui explicabo assumenda corrupti corporis alias eum recusandae culpa. Enim magni quibusdam consequuntur eveniet quod, similique quo provident excepturi doloribus ex minima soluta quia fugiat fugit quas inventore ipsa quasi voluptate quis saepe exercitationem. Aut necessitatibus temporibus illum delectus.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat animi nesciunt amet id dolorem deleniti sint fugiat ad, quos sapiente omnis dolore natus, quod in, impedit earum labore ducimus aperiam. Dolores doloribus illo magni. Minima quidem sit voluptatem vero consequuntur, dignissimos doloremque eveniet iusto qui voluptates culpa blanditiis necessitatibus maxime voluptas voluptatibus tempora fugiat esse modi est deserunt! Rerum, eius in magnam eligendi ut distinctio officiis voluptates a quod vitae incidunt deleniti ratione facere soluta delectus. Ut illum libero cupiditate in explicabo maxime, natus quod, maiores aperiam, sapiente vel quas dolores aspernatur doloremque commodi aut molestiae voluptas nam quia quos tempore! Facere totam error explicabo ea nam eius? Molestias excepturi aut mollitia nostrum alias labore non consectetur. Vero, consequatur rem totam excepturi doloremque ipsum molestiae facilis vitae cupiditate similique vel ad repellat, magni veritatis quis iusto! Non totam eaque unde aliquam quae vitae sit temporibus repellendus iure dignissimos dolore doloremque magni facere ab praesentium quibusdam, fugit illum minima optio eligendi provident. Laudantium, perferendis! Culpa totam tenetur, consequatur, eaque quia architecto voluptatibus velit vel quasi expedita a recusandae incidunt eum ipsum ea ipsam? Earum modi vitae ipsam maiores beatae voluptates vel enim adipisci? Voluptas, non. Adipisci corporis exercitationem ex a eos.
+                                        </p>
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, aliquam eum voluptatum doloribus similique dolor magni exercitationem totam vero iusto possimus facilis ut sint! Magnam, quidem explicabo? Odio dolorum ea, quisquam dolore aliquid omnis quam repellat tempore nam magnam maiores fuga animi iusto blanditiis deleniti. In nostrum veritatis quibusdam ipsa reiciendis animi! Error, dolorum aspernatur aliquam distinctio nisi amet provident. Consequuntur, dolorum veniam obcaecati nulla, nihil aliquam fugiat ipsa quos vero modi quae repellat officiis. Excepturi id voluptatibus, saepe quos doloremque porro impedit ea modi, sequi ut minima maxime nesciunt tempore? Inventore porro possimus ipsam quis eos hic architecto nisi.
+                                        </p>
+                                        <p>
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem odio modi vero quis voluptatibus excepturi ab quidem incidunt nemo, assumenda fugiat repellendus tempore facere iste dolorum, quasi, est totam autem unde sapiente aliquam? Animi at excepturi sunt recusandae quibusdam. Minus laborum excepturi sunt dolorum aut placeat voluptate dignissimos labore eveniet amet ex voluptates officia modi repellendus sapiente harum magni omnis aspernatur pariatur eum sit, mollitia, quo possimus. Numquam aliquid inventore veniam, nihil molestias accusamus dolores iste atque corporis esse blanditiis nulla reiciendis. Incidunt hic ullam porro vero. Quisquam dignissimos itaque voluptate animi natus atque assumenda hic minus eius aliquam.
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta hic delectus eos, doloribus ab assumenda culpa. Placeat excepturi quisquam molestias facere, qui voluptas eligendi culpa labore sed sequi sint totam, exercitationem iste itaque? Eum magni, iste sit in officia nesciunt atque est nulla suscipit possimus non dignissimos dolorum assumenda delectus distinctio facilis enim. Earum accusamus atque facilis, perferendis laboriosam iste dignissimos mollitia! Magni, doloremque! Ipsum, aperiam mollitia? Quo harum officiis magnam dignissimos consequatur velit voluptatum, laudantium excepturi doloremque id soluta quas facilis iusto repudiandae nulla cum? Quia saepe facilis iste laborum tempore fuga esse debitis repudiandae molestiae. Expedita ut sed incidunt nam totam debitis labore consequuntur, dolor officia maiores harum error ex, pariatur explicabo autem dolorem deleniti alias quo aperiam delectus architecto sequi possimus velit facilis? Ab molestiae labore, reprehenderit delectus sint expedita sequi cumque beatae omnis, doloribus dolore minima deleniti. Aliquid vitae impedit ratione soluta reprehenderit officiis explicabo ut, possimus vero, omnis excepturi eligendi minima quisquam doloremque exercitationem numquam dolores ea suscipit nihil voluptates iusto fugiat? Culpa omnis cum molestiae nemo voluptates odio magnam quos illo beatae sapiente, soluta voluptatibus quas. Iusto temporibus consectetur reprehenderit quisquam similique vitae quae, fuga velit! Ipsa pariatur neque, fugit iste rem consequatur id!
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        
+        <section class="required__packege"  id="link-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Выберите нужный пакет</h1>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="required__packege-item">
+                            <p class="type">- pro -</p>
+                            <p class="price">20 000 &#8381</p>
+                            <p class="overall__about about__packege">УМК по робототехнике и программированию</p>
+                            <a class="application__btn" href="#link-4">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="required__packege-item">
+                            <p class="type">- robo -</p>
+                            <p class="price price__extra">15 000 &#8381</p>
+                            <p class="overall__about about__packege">УМК по робототехнике</p>
+                            <a class="application__btn" href="#link-4">Оставить заявку</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="required__packege-item">
+                            <p class="type">- prog -</p>
+                            <p class="price price__extra">10 000 &#8381</p>
+                            <p class="overall__about about__packege">УМК по программированию</p>
+                            <a class="application__btn" href="#link-4">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="registration__course" id="link-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="registration__discount">
+                            <p class="discount">
+                                Запишитесь на курс со скидкой 10%
+                            </p>
+                            <p class="promotion__date">
+                                Акция действительна до 10 марта 2022 года
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <form action="#" class="registration">
+                            <p>
+                                <input type="text" class="input" id="user-name" name = "name" placeholder="Имя">
+                            </p>
+                             <p>
+                                <input type="number" class="input" id="user-telephone" name="telephone" placeholder="Телефон">
+                             </p>   
+                            <p>
+                                <input type="email" class="input" id="user-email" name="email" placeholder="E-mail">
+                            </p>
+                            <p>
+                                <button type="submit" class="registration__btn">Оформить заявку</button>
+                            </p>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container container-footer">
+                <div class="footer-menu">
+                    <a class="footer-logo" href="#">Robo.school</a>
+                    <a class="footer-telophone-link" href="#">+7 800 000 11 22</a>
+                </div>                        
+                <div class="copy">
+                    <span>&copy; Robo.school</span>
+                </div>
+            </div>
+        </footer>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
